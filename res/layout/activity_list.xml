@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.FrameLayoutEx android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:frameLayoutExTopForegroundDrawable="?shadowTopImage" custom:frameLayoutExTopForegroundHeight="@dimen/panel_elevation">
+        <com.zello.ui.ListViewEx android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+        <TextView android:gravity="center" android:id="@android:id/text1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zello.ui.FrameLayoutEx>
+</LinearLayout>

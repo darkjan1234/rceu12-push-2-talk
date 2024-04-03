@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_icon">@color/K100</color>
+    <color name="notification_ptt_color_face">@color/_K13</color>
+    <color name="notification_ptt_icon">@color/K100</color>
+    <color name="notification_ptt_ring_disabled">@color/K0</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/profileInfoIcon" android:layout_width="@dimen/button_icon_size" android:layout_height="@dimen/button_icon_size" android:scaleType="fitCenter" />
+    <TextView android:ellipsize="end" android:id="@id/profileInfoText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/large_padding" android:layout_marginRight="@dimen/large_padding" android:layout_weight="1.0" style="?normalTextStyle" />
+    <TextView android:ellipsize="end" android:id="@id/profileInfoMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="?contactTextSecondaryStyle" />
+</LinearLayout>

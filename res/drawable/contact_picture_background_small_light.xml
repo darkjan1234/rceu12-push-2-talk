@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/contact_picture_frame_small" android:color="@color/contact_picture_frame_light" />
+    <padding android:left="@dimen/contact_picture_frame_small" android:top="@dimen/contact_picture_frame_small" android:right="@dimen/contact_picture_frame_small" android:bottom="@dimen/contact_picture_frame_small" />
+    <solid android:color="@color/contact_picture_background_light" />
+</shape>

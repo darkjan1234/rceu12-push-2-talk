@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.LinearLayoutEx android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/contact_small_portrait" />
+    <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/contact_vertical_padding_portrait_small" android:paddingRight="@dimen/contact_profile_icon_horizontal_margin_small" android:paddingBottom="@dimen/contact_vertical_padding_portrait_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/contact_profile_icon_horizontal_margin_small_negative" android:paddingEnd="@dimen/contact_profile_icon_horizontal_margin_small" android:layout_marginStart="@dimen/contact_profile_icon_horizontal_margin_small_negative">
+        <com.zello.ui.TextViewEx android:id="@id/contact_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/contact_text_horizontal_margin" style="?contactTextNormalStyle" />
+        <com.zello.ui.TextViewEx android:id="@id/contact_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_text_vertical_margin" android:drawablePadding="@dimen/contact_text_horizontal_margin" style="?contactTextNormalStyle" />
+    </LinearLayout>
+</com.zello.ui.LinearLayoutEx>

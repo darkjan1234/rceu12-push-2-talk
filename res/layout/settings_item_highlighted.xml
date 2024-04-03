@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/settings_item_highlighted_0" android:background="?settingItemHighlightedBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:paddingLeft="@dimen/grid4" android:paddingTop="@dimen/large_padding" android:paddingRight="@dimen/grid4" android:paddingBottom="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ClickableMenu">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/large_text_size" android:textColor="?settingItemHighlightedTextColor" android:id="@id/title" android:tag="binding_2" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="?normalTextStyle" />
+            <TextView android:textColor="?settingItemHighlightedTextColor" android:id="@id/description" android:tag="binding_3" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+        </LinearLayout>
+        <ImageView android:id="@id/icon" android:tag="binding_4" android:layout_width="@dimen/grid10" android:layout_height="@dimen/grid10" android:paddingStart="@dimen/large_padding" android:paddingEnd="@dimen/large_padding" />
+    </LinearLayout>
+</FrameLayout>

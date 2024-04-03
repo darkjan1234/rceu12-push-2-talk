@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/work_domain_flow_navigation" app:startDestination="@id/workDomainEmailFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_work_domain_email" android:name="com.zello.ui.workDomainFlow.WorkDomainEmailFragment" android:id="@id/workDomainEmailFragment">
+        <action android:id="@id/action_workDomainEmailFragment_to_workDomainUpsellFragment" app:destination="@id/workDomainUpsellFragment" />
+    </fragment>
+    <fragment android:label="fragment_work_domain_upsell" android:name="com.zello.ui.workDomainFlow.WorkDomainUpsellFragment" android:id="@id/workDomainUpsellFragment">
+        <action android:id="@id/action_workDomainUpsellFragment_to_workDomainSignupCompanyFragment" app:destination="@id/workDomainSignupCompanyFragment" />
+    </fragment>
+    <fragment android:label="fragment_work_domain_sign_up_company" android:name="com.zello.ui.workDomainFlow.WorkDomainSignupCompanyFragment" android:id="@id/workDomainSignupCompanyFragment">
+        <action android:id="@id/action_workDomainSignupCompanyFragment_to_workDomainSignupNetworkFragment" app:destination="@id/workDomainSignupNetworkFragment" />
+    </fragment>
+    <fragment android:label="fragment_work_domain_sign_up_network" android:name="com.zello.ui.workDomainFlow.WorkDomainSignupNetworkFragment" android:id="@id/workDomainSignupNetworkFragment" />
+</navigation>

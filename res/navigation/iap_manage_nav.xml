@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/iap_manage_nav" app:startDestination="@id/iapManageInfoFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="IapManageInfoFragment" android:name="com.zello.ui.iap.view.IapManageInfoFragment" android:id="@id/iapManageInfoFragment">
+        <action android:id="@id/action_iapManageInfoFragment_to_iapManageCancelFragment" app:destination="@id/iapManageCancelFragment" />
+    </fragment>
+    <fragment android:label="IapManageCancelFragment" android:name="com.zello.ui.iap.view.IapManageCancelFragment" android:id="@id/iapManageCancelFragment">
+        <action android:id="@id/action_iapManageCancelFragment_to_iapManageInfoFragment" app:destination="@id/iapManageCancelFragment" />
+    </fragment>
+</navigation>

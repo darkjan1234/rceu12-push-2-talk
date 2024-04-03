@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dispatch_history_header" android:background="?talkPanelColor" android:paddingTop="@dimen/grid2" android:paddingBottom="@dimen/grid2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/grid2" android:paddingEnd="0.0dip" style="?sectionStyle">
+        <com.zello.ui.ProfileImageView android:id="@id/dispatch_call_history_profile" android:layout_width="@dimen/contact_profile_icon_size_medium" android:layout_height="@dimen/contact_profile_icon_size_medium" android:scaleType="center" android:layout_marginEnd="@dimen/grid2" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/grid1">
+            <TextView android:ellipsize="end" android:id="@id/dispatch_history_call_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="?contactTextNameStyle" />
+            <TextView android:ellipsize="end" android:id="@id/dispatch_history_call_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <Button android:id="@id/dispatch_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/grid2" style="?buttonRoundOutlineBlue" />
+        <ImageButton android:id="@id/dispatch_history_close_button" android:layout_width="?actionBarButtonWidth" android:layout_height="@dimen/contact_button_size_portrait_large" style="?squareButtonStyle" />
+    </LinearLayout>
+    <include android:id="@id/details_history" layout="@layout/details_history" />
+</LinearLayout>

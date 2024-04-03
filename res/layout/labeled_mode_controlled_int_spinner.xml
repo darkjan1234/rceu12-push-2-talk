@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" android:maxLines="1" style="?secondaryTextStyle" />
+    <TextView android:id="@id/displayText" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?profileTextStyle" />
+    <com.zello.ui.SpinnerEx android:id="@id/adapterView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

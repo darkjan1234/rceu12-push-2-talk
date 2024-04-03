@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_state_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid4" style="?emptyStateIcon" />
+    <TextView android:gravity="center" android:id="@id/empty_state_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid2" style="?emptyStateTitleText" />
+    <TextView android:gravity="center" android:id="@id/empty_state_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid4" style="?emptyStateBodyText" />
+    <Button android:gravity="center" android:id="@id/empty_state_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginHorizontal="@dimen/grid4" style="?buttonSquareSolidBlueBoldStyle" />
+</LinearLayout>

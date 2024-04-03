@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction android:description="@string/mdm_username" android:title="@string/mdm_username" android:key="username" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/mdm_password" android:title="@string/mdm_password" android:key="password" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/mdm_network" android:title="@string/mdm_network" android:key="network" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/mdm_sso_url" android:title="@string/mdm_sso_url" android:key="sso_uri" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/mdm_slo_url" android:title="@string/mdm_slo_url" android:key="slo_uri" android:defaultValue="" android:restrictionType="string" />
+</restrictions>

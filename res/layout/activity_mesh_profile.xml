@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?colorPrimaryDark" android:paddingBottom="@dimen/profile_margin_large" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/profilePictureWrapper" android:padding="@dimen/profile_margin_large" android:focusable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:defaultFocusHighlightEnabled="false">
+                    <com.zello.ui.ProfileImageView android:id="@id/profilePicture" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:profileImageViewCircular="true" custom:profileImageViewSpacerWidth="@dimen/contact_profile_tile_spacing" />
+                    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/profileToolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/profile_camera_button_margin" android:layout_marginBottom="@dimen/profile_camera_button_margin" android:layout_marginEnd="@dimen/profile_camera_button_margin" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/infoRows" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/profileActions" android:paddingTop="@dimen/profile_margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.zello.ui.ScrollViewEx>
+        <ImageView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowTopImage" />
+    </FrameLayout>
+</LinearLayout>

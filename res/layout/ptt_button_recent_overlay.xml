@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/grid1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zello.ui.SwitchEx android:id="@id/showCheckBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+</LinearLayout>

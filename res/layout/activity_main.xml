@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.LinearLayoutEx android:orientation="vertical" android:id="@id/root" android:tag="layout/activity_main_0" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.FrameLayoutEx android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zello.ui.LinearLayoutEx android:orientation="vertical" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zello.ui.ViewFlipper android:id="@id/flipper" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/login" />
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/contacts_tabs_bottom" />
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/details" />
+            </com.zello.ui.ViewFlipper>
+            <include android:layout_gravity="bottom" android:id="@id/connection_status_inline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/connection_status_inline" />
+        </com.zello.ui.LinearLayoutEx>
+        <include android:layout_gravity="bottom" android:id="@id/connection_status_floating" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="58.0dip" layout="@layout/connection_status_floating" />
+    </com.zello.ui.FrameLayoutEx>
+</com.zello.ui.LinearLayoutEx>

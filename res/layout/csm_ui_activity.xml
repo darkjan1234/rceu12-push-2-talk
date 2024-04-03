@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/holo_red_dark" android:id="@id/current_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:text="Current Channel" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/channel_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="7.0dip" android:text="12" android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@android:color/holo_blue_dark" android:ellipsize="end" android:id="@id/knob_msg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:text="Listening to dispatcher group Listening to dispatcher group" android:maxLines="1" android:textAlignment="center" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/knob_inner_layer" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/knob" android:layout_width="154.0dip" android:layout_height="149.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/knob" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/add_channel_buttons" android:paddingLeft="@dimen/small_padding" android:paddingTop="@dimen/extra_large_padding" android:paddingRight="@dimen/small_padding" android:paddingBottom="@dimen/extra_large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/add_channel_find" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?hugeIconButtonStyle" />
+            <Button android:id="@id/add_channel_scan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_divider_height" style="?hugeIconButtonStyle" />
+            <Button android:id="@id/add_channel_create" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_divider_height" style="?hugeIconButtonStyle" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

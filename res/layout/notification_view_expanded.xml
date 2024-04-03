@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/topGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/notification_view" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/openTalkScreenButton" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_section_margin">
+        <FrameLayout android:id="@id/profileAndStatusGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:id="@id/profileGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/profilePicture" android:layout_width="@dimen/notification_profile_size" android:layout_height="@dimen/notification_profile_size" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/profileStatus" android:layout_width="@dimen/notification_status_size" android:layout_height="@dimen/notification_status_size" android:scaleType="fitXY" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/contactStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/notification_control_margin">
+            <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="end" android:id="@id/contactName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/contactIcon" android:layout_width="@dimen/notification_subtext_size" android:layout_height="@dimen/notification_subtext_size" android:scaleType="centerInside" android:tint="@color/notification_icon" android:layout_marginEnd="@dimen/notification_icon_padding" />
+                <TextView android:textAppearance="@style/NotificationDescription" android:ellipsize="end" android:id="@id/contactText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/pttFrame" android:layout_width="@dimen/notification_ptt_button_size" android:layout_height="@dimen/notification_ptt_button_size" android:layout_marginStart="@dimen/notification_control_margin">
+            <ImageButton android:id="@id/pttButton" android:focusable="true" android:clickable="true" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            <ProgressBar android:id="@id/pttConnecting" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:indeterminateDrawable="@drawable/notification_ptt_button_connecting" />
+            <ImageView android:layout_gravity="center" android:id="@id/pttImage" android:layout_width="@dimen/notification_ptt_button_icon_size" android:layout_height="@dimen/notification_ptt_button_icon_size" android:scaleType="fitCenter" android:tint="@color/notification_ptt_icon" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

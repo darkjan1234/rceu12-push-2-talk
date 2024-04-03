@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	 xmlns:xlink="http://www.w3.org/1999/xlink"
+	 width="24"
+	 height="24"
+	 viewBox="0 0 24 24">
+	<defs>
+		<polygon
+			id="ic_media_play-a"
+			points="8 5 8 19 19 12"/>
+	</defs>
+	<g
+		fill="none"
+		fill-rule="evenodd">
+		<use
+			fill="#000"
+			fill-rule="nonzero"
+			xlink:href="#ic_media_play-a"/>
+	</g>
+</svg>

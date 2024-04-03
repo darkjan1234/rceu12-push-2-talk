@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?actionBarBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zello.ui.ClearButtonEditText android:ellipsize="end" android:id="@id/add_contact_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding" android:maxLines="1" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" />
+        <com.zello.ui.ImageButtonEx android:id="@id/add_contact_search" android:layout_width="48.0dip" android:layout_height="48.0dip" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?profileButtonStyle" />
+    </LinearLayout>
+    <com.zello.ui.FrameLayoutEx android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:frameLayoutExTopForegroundDrawable="?shadowTopImage" custom:frameLayoutExTopForegroundHeight="@dimen/panel_elevation">
+        <com.zello.ui.ViewFlipper android:id="@id/add_contact_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zello.ui.ListViewEx android:id="@id/add_contact_search_list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+            <com.zello.ui.ScrollViewEx android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/extra_large_padding" android:paddingTop="@dimen/large_padding" android:paddingRight="@dimen/extra_large_padding" android:paddingBottom="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/extra_large_padding" android:paddingVertical="@dimen/large_padding">
+                    <TextView android:layout_gravity="center_horizontal" android:id="@id/add_contact_import_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/add_user_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding">
+                        <Button android:id="@id/add_contact_import_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonBoldStyle" />
+                        <Button android:id="@id/add_contact_scan_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_divider_height" style="?buttonBoldStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.zello.ui.ScrollViewEx>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/extra_large_padding" android:paddingRight="@dimen/extra_large_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/extra_large_padding">
+                <TextView android:id="@id/add_contact_search_not_found" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding" android:layout_marginTop="@dimen/large_padding" android:layout_marginRight="@dimen/small_padding" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/add_contact_search_invite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" style="?buttonBoldStyle" />
+            </LinearLayout>
+        </com.zello.ui.ViewFlipper>
+    </com.zello.ui.FrameLayoutEx>
+</LinearLayout>

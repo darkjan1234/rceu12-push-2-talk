@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.LinearLayoutEx android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?viewStyle">
+        <com.zello.ui.ClearButtonEditText android:ellipsize="end" android:id="@id/name_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding" android:maxLines="1" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" />
+        <com.zello.ui.ImageButtonEx android:id="@id/search" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?profileButtonStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/status_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?viewStyle">
+        <com.zello.ui.ImageButtonEx android:id="@id/previous" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?profileButtonStyle" />
+        <TextView android:gravity="center_horizontal" android:id="@id/status" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.zello.ui.ImageButtonEx android:id="@id/next" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?profileButtonStyle" />
+    </LinearLayout>
+    <com.zello.ui.FrameLayoutEx android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:frameLayoutExTopForegroundDrawable="?shadowTopImage" custom:frameLayoutExTopForegroundHeight="@dimen/panel_elevation">
+        <TextView android:gravity="center" android:id="@id/empty" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.zello.ui.ListViewEx android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+    </com.zello.ui.FrameLayoutEx>
+</com.zello.ui.LinearLayoutEx>

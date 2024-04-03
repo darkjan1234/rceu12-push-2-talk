@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:orientation="vertical" android:id="@id/root" android:paddingLeft="@dimen/extra_large_padding" android:paddingTop="@dimen/large_padding" android:paddingRight="@dimen/extra_large_padding" android:paddingBottom="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/extra_large_padding" android:paddingVertical="@dimen/large_padding">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:id="@id/private_info_email_label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <EditText android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/private_info_email_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="80" android:inputType="textEmailAddress" />
+                <TextView android:id="@id/private_info_email_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="10" style="?contactTextSecondaryStyle" />
+                <TextView android:id="@id/private_info_phone_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" android:maxLines="1" />
+                <EditText android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/private_info_phone_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="80" android:inputType="phone" />
+                <TextView android:id="@id/private_info_phone_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="10" style="?contactTextSecondaryStyle" />
+                <TextView android:id="@id/private_info_phone_verified" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="10" style="?contactTextSecondaryStyle" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/private_info_phone_verify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding" android:layout_marginTop="@dimen/large_padding" android:layout_marginRight="@dimen/small_padding" style="?buttonBoldStyle" />
+            </LinearLayout>
+            <TextView android:id="@id/private_info_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" style="@style/TextView.Toast" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

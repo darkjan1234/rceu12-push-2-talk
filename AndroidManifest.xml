@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:largeHeap="true" package="com.loudtalks" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-feature android:name="com.kyocera.PTTKEYAPI" android:required="false"/>
+    <uses-feature android:name="com.kyocera.SOSKEYAPI" android:required="false"/>
+    <permission android:name="com.loudtalks.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.loudtalks.permission.ACTIVITY" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.loudtalks.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.loudtalks.permission.ACTIVITY"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.google.android.gms"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="audio/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <package android:name="com.imprivata.imda"/>
+        <package android:name="com.imprivata.imda.staging"/>
+        <package android:name="com.imprivata.locker"/>
+        <package android:name="com.imprivata.locker.staging"/>
+        <package android:name="com.loudtalks"/>
+        <package android:name="net.loudtalks"/>
+        <package android:name="com.pttsdk"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <permission android:name="com.zello.externalconfig.READ" android:protectionLevel="signature"/>
+    <permission android:name="com.zello.externalconfig.WRITE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.loudtalks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.loudtalks.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="false" android:description="@string/app_desc" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="true" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.zello.ui.ZelloApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:usesCleartextTraffic="true">
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD7dh7yS46VFPDmFyfLe-6xLLYDh7-SeJM"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.zello.ui.MainActivity" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.zello.ui.App" android:targetActivity="com.zello.ui.MainActivity"/>
+        <activity-alias android:exported="true" android:name="com.zello.client.ui.App" android:targetActivity="com.zello.ui.MainActivity"/>
+        <activity-alias android:exported="true" android:name="com.loudtalks.client.ui.App" android:targetActivity="com.zello.ui.MainActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.zello.client.dynamiclinks.DynamicLinkActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="zello.page"/>
+                <data android:host="join.zello.com"/>
+                <data android:host="zello.io"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.root.SettingsRootActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.appearance.SettingsAppearanceActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.behavior.SettingsBehaviorActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.history.SettingsHistoryActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.notifications.SettingsNotificationsActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.notifications.SettingsNotificationsDetailActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.audio.SettingsAudioActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.PttButtonConfigureActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.PttButtonsActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity-alias android:exported="true" android:name="com.zello.client.ui.PttButtonsActivity" android:targetActivity="com.zello.ui.PttButtonsActivity"/>
+        <activity-alias android:exported="true" android:name="com.zello.sdk.PttButtonsActivity" android:targetActivity="com.zello.ui.PttButtonsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.AddPttButtonActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.AdvancedSettingsActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AccountsActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.SigninActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ChangePasswordActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.NotificationsActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.ReportProblemActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.settings.support.AboutActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ThirdPartyInfoActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.DiagnosticInfoActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.GalleryActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.zello.ui.LocationActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.SendLocationActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.PickMapActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.SendAlertActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.camera.CameraCaptureActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/Fullscreen" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.camera.CameraPreviewActivity" android:taskAffinity="" android:theme="@style/Fullscreen" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.camera.cropping.CameraCropActivity" android:taskAffinity="" android:theme="@style/Fullscreen" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AdhocCreateNewActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AdhocAddUsersActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ImportUsersActivity" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.locationtracking.LocationTrackingActivity" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.zello.sdk.Activity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.zello.sdk.PermissionsActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.INVISIBLE_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:inheritShowWhenLocked="true" android:name="com.zello.ui.ImagePickActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.FilePickActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.zello.ui.PickContactActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <action android:name="android.intent.action.RUN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.QRCodeCaptureActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/Fullscreen" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.SendEmergencyAlertActivity" android:showOnLockScreen="true" android:showWhenLocked="true" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:turnScreenOn="true" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.shareddevicesplugin.ShiftCountdownActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.MeshUserProfileActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.platform.plugins.PlugInActivity" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.plugins.PlugInNotificationDialogActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.dispatch.DispatchCallHistoryActivity" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.PrivateInfoActivity" android:screenOrientation="locked" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.SignupActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AddUserActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AddChannelActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.FindChannelActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.UserBlockedUsersActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ChannelAdminUserListActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.WelcomeActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ReportActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.AddAccountActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ProfileActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="true" android:name="com.zello.ui.ProxyActivity" android:stateNotNeeded="true" android:taskAffinity="com.zello.proxy" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.speech.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_HANDS_FREE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:scheme="zello"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.zellowork.com" android:pathPrefix="/app/aso" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="i.zello.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.zello.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="zello.me" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.kyocera.intent.EXTEND_ACTION_CAMERAKEYEVENT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.sso.SsoCustomTabsActivity1" android:stateNotNeeded="true" android:taskAffinity="com.zello.sso" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.sso.SsoCustomTabsActivity2" android:stateNotNeeded="true" android:taskAffinity="com.zello.sso" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.accounts.CustomTabsZelloWorkActivity" android:stateNotNeeded="true" android:taskAffinity="com.zello.accounts" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.QRCodeDisplayActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.ConsumerUpsellActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.zello.ui.CarModeActivity" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.consumerchannelquestionnaire.ConsumerChannelQuestionnaireActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.zello.ui.AllowAnonymousListenersInfoActivity" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/Invisible" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|touchscreen" android:exported="false" android:name="com.zello.ui.introflow.IntroActivity" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|touchscreen" android:exported="false" android:name="com.zello.ui.workDomainFlow.WorkDomainFlowActivity" android:screenOrientation="portrait" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="true" android:name="com.zello.ui.iap.view.IapManageActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.zello.ui.bluetoothpairing.BluetoothDiscoveryActivity" android:screenOrientation="locked" android:taskAffinity="" android:theme="@style/Initial" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.zello.ui.BootCompletedReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter android:priority="999">
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.zello.intent.start"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.zello.client.ui.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/homescreen_widget_info"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.zello.ui.PowerManagerReceiver">
+            <intent-filter>
+                <action android:name="TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zello.ui.notifications.NotificationIconReceiver"/>
+        <receiver android:exported="true" android:name="com.zello.ui.PttButtonReceiver">
+            <intent-filter android:priority="@integer/ptt_button_receiver_priority">
+                <action android:name="com.zello.ptt.down"/>
+                <action android:name="com.zello.ptt.up"/>
+                <action android:name="com.zello.ptt.toggle"/>
+                <action android:name="com.zello.intent.extraButton1.down"/>
+                <action android:name="com.zello.intent.extraButton1.up"/>
+                <action android:name="com.zello.intent.extraButton2.down"/>
+                <action android:name="com.zello.intent.extraButton2.up"/>
+                <action android:name="com.zello.intent.extraButton3.down"/>
+                <action android:name="com.zello.intent.extraButton3.up"/>
+                <action android:name="com.zello.intent.extraButton4.down"/>
+                <action android:name="com.zello.intent.extraButton4.up"/>
+                <action android:name="com.zello.intent.buttonSOS.down"/>
+                <action android:name="com.zello.intent.buttonSOS.up"/>
+                <action android:name="com.sonim.intent.action.PTT_KEY_DOWN"/>
+                <action android:name="com.sonim.intent.action.PTT_KEY_UP"/>
+                <action android:name="com.sonim.intent.action.SOS_KEY_DOWN"/>
+                <action android:name="com.sonim.intent.action.SOS_KEY_UP"/>
+                <action android:name="com.honeywell.intent.action.AUDIO_PTT_STATE_CHANGE"/>
+                <action android:name="com.kyocera.android.intent.action.PHONE_SPEAKER_KEY"/>
+                <action android:name="com.kyocera.intent.EXTEND_ACTION_CAMERAKEYEVENT"/>
+                <action android:name="com.kyocera.intent.action.SOS_BUTTON"/>
+                <action android:name="com.ruggear.intent.action.SOS"/>
+                <action android:name="com.ruggear.intent.action.PTT.CHANNEL.next"/>
+                <action android:name="com.ruggear.intent.action.PTT.CHANNEL.prev"/>
+                <action android:name="com.kodiak.intent.action.KEYCODE_SOS"/>
+                <action android:name="android.intent.action.PTT.down"/>
+                <action android:name="android.intent.action.PTT.up"/>
+                <action android:name="com.runbo.ptt.key.down"/>
+                <action android:name="com.runbo.ptt.key.up"/>
+                <action android:name="com.kyocera.intent.action.PTT_BUTTON"/>
+                <action android:name="com.kodiak.intent.action.PTT_BUTTON"/>
+                <action android:name="com.dfl.a9.camdown"/>
+                <action android:name="com.dfl.a9.camup"/>
+                <action android:name="com.android.extKey.voice.down"/>
+                <action android:name="com.android.extKey.voice.up"/>
+                <action android:name="com.android.extKey.one.down"/>
+                <action android:name="com.android.extKey.one.up"/>
+                <action android:name="com.android.extKey.two.down"/>
+                <action android:name="com.android.extKey.two.up"/>
+                <action android:name="com.android.extKey.three.down"/>
+                <action android:name="com.android.extKey.three.up"/>
+                <action android:name="android.intent.action.sos.down"/>
+                <action android:name="android.intent.action.sos.up"/>
+                <action android:name="android.intent.action.button1Key"/>
+                <action android:name="android.intent.action.button2Key"/>
+                <action android:name="android.intent.action.SOS.down"/>
+                <action android:name="android.intent.action.SOS.up"/>
+                <action android:name="android.intent.action.FUNC_LONG_PRESS"/>
+                <action android:name="com.android.action.KEYCODE_FORWARD_NEW"/>
+                <action android:name="com.android.action.KEYCODE_BACKWARD"/>
+                <action android:name="com.android.action.KEYCODE_SURE"/>
+                <action android:name="com.elektrobit.pttbutton.PTTBUTTON_DOWN"/>
+                <action android:name="com.elektrobit.pttbutton.PTTBUTTON_UP"/>
+                <action android:name="com.bittium.emergencybutton.EMERGENCY_DOWN"/>
+                <action android:name="com.bittium.emergencybutton.EMERGENCY_UP"/>
+                <action android:name="android.intent.action.FUNCTION_KEY_DOWN_PRESSED"/>
+                <action android:name="android.intent.action.FUNCTION_KEY_RELEASED"/>
+                <action android:name="android.intent.action.FUNCTION_KEY1_DOWN_PRESSED"/>
+                <action android:name="android.intent.action.FUNCTION_KEY1_RELEASED"/>
+                <action android:name="com.mcx.intent.action.CRITICAL_COMMUNICATION_CONTROL_KEY"/>
+                <action android:name="com.mcx.intent.action.CRITICAL_COMMUNICATION_SOS_KEY"/>
+                <action android:name="com.samsung.android.knox.intent.action.HARD_KEY_REPORT "/>
+                <action android:name="com.apollo.intent.action.PTT_BUTTON"/>
+                <action android:name="com.apollo.intent.action.PANIC_BUTTON"/>
+                <action android:name="com.symbol.button.L2"/>
+                <action android:name="com.symbol.button.R2"/>
+                <action android:name="com.android.ptt.down"/>
+                <action android:name="com.android.ptt.up"/>
+            </intent-filter>
+            <intent-filter android:priority="@integer/ptt_button_receiver_priority">
+                <action android:name="com.kyocera.android.intent.action.PTT_BUTTON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zello.ui.SendInvitationShareSheetReceiver"/>
+        <receiver android:exported="true" android:name="com.zello.ui.ChannelKnobReceiver">
+            <intent-filter>
+                <action android:name="com.zello.intent.channelUp"/>
+                <action android:name="com.zello.intent.channelDown"/>
+                <action android:name="com.zello.intent.setChannel"/>
+                <action android:name="com.dfl.knob"/>
+                <action android:name="com.kodiak.intent.action.ROTARY_KNOB"/>
+                <action android:name="android.intent.action.CHANNELUP.down"/>
+                <action android:name="android.intent.action.CHANNELDOWN.down"/>
+                <action android:name="android.intent.action.pttDown.down"/>
+                <action android:name="android.intent.action.pttUp.down"/>
+                <action android:name="android.intent.action.P2.down"/>
+                <action android:name="android.intent.action.P3.down"/>
+                <action android:name="android.intent.action.CHANNELUP"/>
+                <action android:name="android.intent.action.CHANNELDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.zello.ui.messages.MessageRestrictionReceiver">
+            <intent-filter>
+                <action android:name="com.zello.intent.userInteractions.disable"/>
+                <action android:name="com.zello.intent.userInteractions.enable"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.zello.ui.AppConfigReceiver">
+            <intent-filter>
+                <action android:name="com.zello.intent.action.APP_CONFIG"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="location|mediaPlayback|microphone" android:name="com.zello.ui.Svc" android:stopWithTask="false"/>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="location|microphone" android:name="com.loudtalks.client.ui.Svc"/>
+        <service android:exported="true" android:name="com.zello.ui.FirebaseCloudMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.zello.ui.overlay.OverlayService"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <receiver android:exported="true" android:name="com.zello.platform.PowerOffReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.ACTION_REBOOT"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.zello.ui.DialerLaunchReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE"/>
+                <data android:host="93556" android:scheme="android_secret_code"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.loudtalks.camera" android:exported="false" android:grantUriPermissions="true" android:name="com.zello.ui.FileProviderCamera">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/camera_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.loudtalks.alert" android:exported="true" android:grantUriPermissions="true" android:name="com.zello.ui.FileProviderAlert"/>
+        <provider android:authorities="com.loudtalks.provider" android:exported="true" android:name="com.zello.sdk.Provider"/>
+        <meta-data android:name="com.samsung.android.knox.intent.action.HARD_KEY_PRESS" android:value="true"/>
+        <meta-data android:name="debug" android:value="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.style" android:value="fixedRatio"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions"/>
+        <meta-data android:name="com.zello.SDK" android:value="true"/>
+        <meta-data android:name="com.sonim.CSM_API_KEY_META_DATA" android:value="com.sonim.permission.CSM"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="app_key_ptt_intent" android:value="com.zello.ui.PttButtonReceiver"/>
+        <meta-data android:name="app_key_ptt_priority" android:value="81"/>
+        <meta-data android:name="app_key_ptt_data" android:value="96b76e5fce116b316e06017b83289ec19c627f70f232c76f6c6ca9fd3871e17b"/>
+        <meta-data android:name="app_key_sos_data" android:value="438d46c55d8e6079268fc4a4da297b2a4ef05029c2c73979f40622f1728095e8"/>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:exported="true" android:name="com.zello.universalapkplugin.UniversalApkReceiver">
+            <intent-filter>
+                <action android:name="com.zello.universalapkplugin.BEACON"/>
+                <action android:name="com.zello.universalapkplugin.IMPORT"/>
+                <action android:name="com.zello.universalapkplugin.EXPORT"/>
+                <action android:name="com.zello.universalapkplugin.FINISH"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.loudtalks.universalapkplugin" android:exported="false" android:grantUriPermissions="true" android:name="com.zello.universalapkplugin.UniversalApkProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/universalapkplugin_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.zello.externalconfig.provider" android:enabled="@bool/external_config_enabled" android:exported="true" android:name="com.zello.externalconfig.provider.ExternalConfigProvider" android:readPermission="com.zello.externalconfig.READ" android:writePermission="com.zello.externalconfig.WRITE"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.loudtalks.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+    </application>
+</manifest>

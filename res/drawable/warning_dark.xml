@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/warning_corner_radius" />
+    <solid android:color="@color/warning_dark" />
+    <padding android:left="@dimen/warning_padding" android:top="@dimen/warning_padding" android:right="@dimen/warning_padding" android:bottom="@dimen/warning_padding" />
+</shape>

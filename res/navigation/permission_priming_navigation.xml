@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/permission_priming_navigation" app:startDestination="@id/adminWelcomeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_admin_welcome" android:name="com.zello.ui.introflow.IntroFragment" android:id="@id/adminWelcomeFragment" />
+    <fragment android:label="fragment_permission_priming" android:name="com.zello.ui.introflow.PermissionsPrimingFragment" android:id="@id/permissionPrimingFragment" />
+    <fragment android:label="fragment_user_categorization" android:name="com.zello.ui.introflow.UserCategorizationFragment" android:id="@id/userCategorization" />
+</navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.zello.ui.RoundedFrameLayout android:layout_gravity="center_horizontal" android:id="@id/qr_code_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:constrainedFrameLayoutSquare="true" custom:roundedFrameLayoutCornerRadius="0.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </com.zello.ui.RoundedFrameLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/qr_display_save_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/extra_large_padding" android:layout_marginTop="@dimen/large_padding" android:layout_marginRight="@dimen/extra_large_padding" android:layout_marginHorizontal="@dimen/extra_large_padding" style="?buttonBoldStyle" />
+            <TextView android:gravity="center_horizontal" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/extra_large_padding" android:layout_marginTop="@dimen/large_padding" android:layout_marginRight="@dimen/extra_large_padding" android:layout_marginHorizontal="@dimen/extra_large_padding" style="?profileTextStyle" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

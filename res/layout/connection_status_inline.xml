@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.SlidingLinearLayout android:orientation="vertical" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" custom:slidingLinearLayoutAnimate="false" style="?viewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" android:src="?viewDivider" />
+    <com.zello.ui.LinearLayoutEx android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarButtonWidth">
+        <ProgressBar android:id="@id/message_progress" android:padding="@dimen/large_padding" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" android:indeterminate="true" style="?progressBarLargeStyle" />
+        <com.zello.ui.ImageViewEx android:id="@id/message_icon" android:padding="@dimen/button_icon_padding" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" android:scaleType="centerInside" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="@dimen/small_padding">
+            <com.zello.ui.TextViewEx android:ellipsize="none" android:id="@id/message_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="@integer/connection_status_max_lines" android:singleLine="false" style="?contactTextNormalStyle" />
+            <com.zello.ui.TextViewEx android:id="@id/message_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="?contactTextSecondaryStyle" />
+        </LinearLayout>
+        <Button android:id="@id/message_cancel" android:layout_width="wrap_content" android:layout_height="?actionBarButtonWidth" style="?buttonSquareBorderlessGreyStyle" />
+        <Button android:id="@id/message_signin" android:layout_width="wrap_content" android:layout_height="?actionBarButtonWidth" style="?buttonSquareBorderlessGreyStyle" />
+    </com.zello.ui.LinearLayoutEx>
+</com.zello.ui.SlidingLinearLayout>

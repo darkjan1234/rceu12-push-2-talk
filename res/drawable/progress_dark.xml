@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <shape>
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:gravity="bottom" android:id="@android:id/progress" android:height="@dimen/audio_progress_bar_height">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <solid android:color="@color/ic_blue_dark" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

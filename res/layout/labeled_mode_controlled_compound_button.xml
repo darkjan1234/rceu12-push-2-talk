@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding" android:maxLines="1" style="?secondaryTextStyle" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/checkboxContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/large_padding">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" />
+        <ImageView android:gravity="center" android:id="@id/infoButton" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/small_button_size" android:layout_height="@dimen/small_button_size" android:layout_margin="@dimen/button_padding_small" android:scaleType="centerInside" style="?profileButtonStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/displayText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="?profileTextStyle" />
+</LinearLayout>

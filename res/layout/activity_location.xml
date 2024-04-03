@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.FrameLayoutEx android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:frameLayoutExTopForegroundDrawable="?shadowTopImage" custom:frameLayoutExTopForegroundHeight="@dimen/panel_elevation">
+        <com.zello.ui.MapViewEx android:id="@id/mapView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/mapStatusLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/mapStatusTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="?normalTextStyle" />
+            <TextView android:gravity="center" android:id="@id/googlePlayServicesLink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mapStatusTextView" style="?normalTextStyle" />
+        </RelativeLayout>
+    </com.zello.ui.FrameLayoutEx>
+</LinearLayout>

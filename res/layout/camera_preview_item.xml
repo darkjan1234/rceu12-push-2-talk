@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.RoundedFrameLayout android:focusable="true" android:clickable="true" android:layout_width="@dimen/camera_preview_miniature_size" android:layout_height="@dimen/camera_preview_miniature_size" android:layout_marginLeft="@dimen/camera_preview_miniature_margin_horizontal" android:layout_marginRight="@dimen/camera_preview_miniature_margin_horizontal" android:foreground="?android:selectableItemBackground" android:layout_marginHorizontal="@dimen/camera_preview_miniature_margin_horizontal" custom:constrainedFrameLayoutSquare="true" custom:roundedFrameLayoutCornerRadius="@dimen/camera_preview_miniature_corner"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/cameraPreviewItemImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/cameraPreviewItemSelector" android:background="@drawable/camera_item_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.zello.ui.RoundedFrameLayout>

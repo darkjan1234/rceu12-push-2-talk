@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dispatch_banner_root" android:background="?talkPanelColor" android:paddingTop="@dimen/grid2" android:paddingBottom="@dimen/grid2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/grid2" android:paddingEnd="0.0dip" style="?sectionStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.ProfileImageView android:id="@id/driver_call_profile" android:layout_width="@dimen/contact_profile_icon_size_large" android:layout_height="@dimen/contact_profile_icon_size_large" android:scaleType="center" android:layout_marginEnd="@dimen/grid2" custom:profileImageViewBackColor="?talkPanelColor" custom:profileImageViewCircular="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/grid1">
+        <TextView android:ellipsize="end" android:id="@id/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?contactTextNameStyle" />
+        <TextView android:ellipsize="end" android:id="@id/secondary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_text_vertical_margin" style="?contactTextSecondaryStyle" />
+    </LinearLayout>
+    <Button android:id="@id/call_end_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/grid2" style="?buttonRoundPanelStyle" />
+    <com.zello.ui.ImageButtonEx android:id="@id/dispatch_actions" android:visibility="gone" android:layout_width="?actionBarButtonWidth" android:layout_height="@dimen/contact_button_size_portrait_medium" style="?squareButtonStyle" />
+</LinearLayout>

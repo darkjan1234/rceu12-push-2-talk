@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_settings_audio_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/extra_large_padding" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/autoVolumeSection" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.zello.ui.SwitchEx android:id="@id/autoVolumeSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding">
+                    <ImageView android:id="@id/autoVolumeLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:tint="?listPrimaryColor" />
+                    <SeekBar android:gravity="center_vertical" android:id="@id/autoVolumeSeekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid1" android:layout_marginRight="@dimen/grid1" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/autoVolumeRight" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:tint="?listPrimaryColor" />
+                </LinearLayout>
+                <View android:background="?listViewDividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" android:layout_marginBottom="@dimen/extra_large_padding" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding">
+                <TextView android:id="@id/playbackTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/medium_padding" style="?secondaryTextStyle" />
+                <TextView android:id="@id/playbackGainLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?secondaryTextStyle" />
+            </LinearLayout>
+            <com.zello.ui.SwitchEx android:id="@id/playbackAgcSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" />
+            <SeekBar android:id="@id/playbackGainSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <View android:background="?listViewDividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding">
+                <TextView android:id="@id/recordingTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/medium_padding" style="?secondaryTextStyle" />
+                <TextView android:id="@id/recordingGainLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?secondaryTextStyle" />
+            </LinearLayout>
+            <com.zello.ui.SwitchEx android:id="@id/recordingAgcSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" />
+            <SeekBar android:id="@id/recordingGainSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <View android:background="?listViewDividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <com.zello.ui.SwitchEx android:id="@id/noiseSuppressionSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <com.zello.ui.SwitchEx android:id="@id/smartBluetoothSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <View android:background="?listViewDividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" android:layout_marginBottom="@dimen/extra_large_padding" />
+            <TextView android:gravity="center_vertical" android:id="@id/legacyBluetoothTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/legacyBluetoothSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

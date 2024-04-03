@@ -1,0 +1,615 @@
+{
+  "bluetoothle": [
+    {
+      "name": "TI BLE Sensor Tag",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Rachun-561",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 12,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "GT-Keyfob1",
+      "buttonService": "39E979B8-1935-11E2-99E9-F23C91AEC05E",
+      "buttonCharacteristic": "01482D6C-1939-11E2-99E9-F23C91AEC05E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "GT Smart Helmet",
+      "buttonService": "0000ffe0-0000-1000-8000-00805f9b34fb",
+      "buttonCharacteristic": "0000ffe1-0000-1000-8000-00805f9b34fb",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "GT Smart Button",
+      "buttonService": "0000ffe0-0000-1000-8000-00805f9b34fb",
+      "buttonCharacteristic": "0000ffe1-0000-1000-8000-00805f9b34fb",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "CODAClick",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "TAM Milicom PTT",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Kensington Eureka C336",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 12,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Smart Key Finder",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "My Keep",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 12,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "PTT-Z",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": false,
+      "preferSPP": true
+    },
+    {
+      "name": "PTT-U",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Twiins Button",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "Blu-PTT",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "AWIRE PTT",
+      "buttonService": "0x180F",
+      "buttonCharacteristic": "0x2A19",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "bb radio",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "NeoV PTT",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "MAXTON MBT700",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "The Dash",
+      "buttonService": "BB1A8665-0001-4332-8AB2-B59EB6C77B1E",
+      "buttonCharacteristic": "BB1A8665-0002-4332-8AB2-B59EB6C77B1E",
+      "buttonMode": 11,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "VXi Parrott Button",
+      "buttonService": "95665A00-8704-11E5-960C-0002A5D5C51B",
+      "buttonCharacteristic": "66339E60-D55A-11E5-B7CB-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true,
+      "profile": "vxi"
+    },
+    {
+      "name": "Jabra",
+      "buttonService": "95665A00-8704-11E5-960C-0002A5D5C51B",
+      "buttonCharacteristic": "66339E60-D55A-11E5-B7CB-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true,
+      "createBond": true,
+      "profile": "vxi"
+    },
+    {
+      "name": "PB",
+      "buttonService": "95665A00-8704-11E5-960C-0002A5D5C51B",
+      "buttonCharacteristic": "66339E60-D55A-11E5-B7CB-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Milicom BLE PTT Button",
+      "buttonService": "032889a0-5cc1-11e5-bfac-0002a5d5c51b",
+      "buttonCharacteristic": "192707e0-5cc1-11e5-b199-0002a5d5c51b",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Zello Button",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "iFound",
+      "buttonService": "0xffe0",
+      "buttonCharacteristic": "0xffe1",
+      "buttonMode": 11,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "iHere",
+      "buttonService": "0xffa0",
+      "buttonCharacteristic": "0xffa8",
+      "buttonMode": 11,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "CODAWheel",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Milicom PTT Button",
+      "buttonService": "0xffff",
+      "buttonCharacteristic": "0xfffe",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "APTT",
+      "buttonService": "127FACE1-CB21-11E5-93D0-0002A5D5C51B",
+      "buttonCharacteristic": "127FBEEF-CB21-11E5-93D0-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false,
+      "createBond": true,
+      "profile": "aptt"
+    },
+    {
+      "name": "Herda PTT",
+      "buttonService": "6ED46ED0-1616-2801-6ED4-6ED4AACD01EF",
+      "buttonCharacteristic": "6ED46ED6-1616-2801-6ED4-6ED4AACD01EF",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false,
+      "createBond": true,
+      "profile": "herda"
+    },
+    {
+      "name": "XCOMM",
+      "buttonService": "492A34AC-54A0-4D75-9C7B-160AC9791D11",
+      "buttonCharacteristic": "492ABEEF-54A0-4D75-9C7B-160AC9791D11",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false,
+      "createBond": true,
+      "profile": "crosscall"
+    },
+    {
+      "name": "ASB",
+      "buttonService": "127FACE1-CB21-11E5-93D0-0002A5D5C51B",
+      "buttonCharacteristic": "127FBEEF-CB21-11E5-93D0-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false,
+      "createBond": true
+    },
+    {
+      "name": "PTT-M",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Vxi Canary",
+      "buttonService": "95665A00-8704-11E5-960C-0002A5D5C51B",
+      "buttonCharacteristic": "66339E60-D55A-11E5-B7CB-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true,
+      "profile": "vxi"
+    },
+    {
+      "name": "PTT Button BB-02C",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "BRPTT-",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "BTH-PTT",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "BSPTT-",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "DavidTest",
+      "buttonService": "d44bc439-abfd-45a2-b575-925416129500",
+      "buttonCharacteristic": "d44bc439-abfd-45a2-b575-925416129601",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "PTT Button BB-02C",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "SHM912",
+      "buttonService": "0xFFA0",
+      "buttonCharacteristic": "0xFFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "BT COM",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "eCell PLY Remocon",
+      "buttonService": "6CCD35DD-8C9C-41F8-9A4E-00FC34E3E4FD",
+      "buttonCharacteristic": "3C21889C-E774-4A2A-BF8F-F33BD93B2314",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "NUVIZ",
+      "buttonService": "90E7671C-B98B-4435-BC23-C5E8D4F23159",
+      "buttonCharacteristic": "51B3C85F-9673-4EC4-8FD7-83C7BB26B862",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "Zello Bluetooth",
+      "buttonService": "0xFAA0",
+      "buttonCharacteristic": "0xFAA1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "Ahead_1122",
+      "buttonService": "1122591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "11228042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 11,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "ECOWALKIE",
+      "buttonService": "0xFFF0",
+      "buttonCharacteristic": "0xFFF1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "MK3(iOS)",
+      "buttonService": "26f62c78-fb63-11e7-8c3f-9a214cf093ae",
+      "buttonCharacteristic": "26f63be6-fb63-11e7-8c3f-9a214cf093ae",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "Stealth BT5.0",
+      "buttonService": "678FEA09-1021-0001-4429-00AB85BA4980",
+      "buttonCharacteristic": "678FEA09-1021-0001-4429-00AB85BA4983",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "ECOXGEAR",
+      "buttonService": "0xFFF1",
+      "buttonCharacteristic": "0xFFF2",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "iTalkie_ZMIC",
+      "buttonService": "00001523-1212-efde-1523-785feabcd123",
+      "buttonCharacteristic": "00001524-1212-efde-1523-785feabcd123",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "RG-C1",
+      "buttonService": "8925d23d-03e4-4447-826c-418dadc7f483",
+      "buttonCharacteristic": "14c56166-6888-4089-b0ce-269d098fe528",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "PTTSB100",
+      "buttonService": "A0FA0001-41E8-4836-918F-7C5412FFF9C4",
+      "buttonCharacteristic": "A0FA0002-41E8-4836-918F-7C5412FFF9C4",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "KIWI Bang",
+      "buttonService": "1122E929-8D4C-4D9E-A574-772A73E63977",
+      "buttonCharacteristic": "11228042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "NBT912",
+      "buttonService": "FFA0",
+      "buttonCharacteristic": "FFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "SCP960",
+      "buttonService": "FFA0",
+      "buttonCharacteristic": "FFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "SHM-612",
+      "buttonService": "FFA0",
+      "buttonCharacteristic": "FFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "SHP612",
+      "buttonService": "FFA0",
+      "buttonCharacteristic": "FFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "iTalkie_ZMIC",
+      "buttonService": "00001523-1212-efde-1523-785feabcd123",
+      "buttonCharacteristic": "00001524-1212-efde-1523-785feabcd123",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "B02PTT",
+      "buttonService": "89A8591D-BB19-485B-9F59-58492BC33E24",
+      "buttonCharacteristic": "894C8042-E841-461C-A5C9-5A73D25DB08E",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Rekon",
+      "buttonService": "678FEA09-1022-0001-4429-00AB85BA4980",
+      "buttonCharacteristic": "678FEA09-1022-0001-4429-00AB85BA4983",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "IASUS IG-PTT",
+      "buttonService": "678FEA09-1023-0001-4429-00AB85BA4980",
+      "buttonCharacteristic": "678FEA09-1023-0001-4429-00AB85BA4983",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "ECOXGEAR-PTT",
+      "buttonService": "0xFFF3",
+      "buttonCharacteristic": "0xFFF4",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "LTK100P",
+      "buttonService": "0xFFA0",
+      "buttonCharacteristic": "0xFFA8",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "ECOXGEARPTT",
+      "buttonService": "0xFFF4",
+      "buttonCharacteristic": "0xFFF5",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "3M Pro-Comms",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "THSPTT",
+      "buttonService": "19B10010-E8F2-537E-4F6C-D104768A1214",
+      "buttonCharacteristic": "19B10011-E8F2-537E-4F6C-D104768A1214",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "THSPTT",
+      "buttonService": "19B10010-E8F2-537E-4F6C-D104768A1214",
+      "buttonCharacteristic": "19B10012-E8F2-537E-4F6C-D104768A1214",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+  {
+      "name": "BluSkye LE",
+      "audioDeviceName": "BluSkye BT",
+      "buttonService": "93f572c0-59f8-4184-aa9e-5606686f1623",
+      "buttonCharacteristic": "a8b04d9d-d612-4c3f-9d7c-ab1dc07ec0e5",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true,
+      "profile": "bluskye"
+  },
+    {
+      "name": "WS PROTAC XPI",
+      "buttonService": "0xFE53",
+      "buttonCharacteristic": "FE53AB12-02D0-334D-B424-0002A5D5C51B",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true,
+      "profile": "protac"
+    },
+    {
+      "name": "REAL X PTT",
+      "buttonService": "0xFFF0",
+      "buttonCharacteristic": "0xFFF1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "RexonPTT",
+      "buttonService": "0xFFE0",
+      "buttonCharacteristic": "0xFFE1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    },
+    {
+      "name": "Kodiak-PTT",
+      "buttonService": "8925D23D-03E4-4447-826C-418DADC7F483",
+      "buttonCharacteristic": "14C56166-6888-4089-B0CE-269D098FE528",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": false
+    },
+    {
+      "name": "CHILOKI-PTT",
+      "buttonService": "0xFFD0",
+      "buttonCharacteristic": "0xFFD1",
+      "buttonMode": 10,
+      "automaticallyAddButton": true,
+      "preferSPP": true
+    }
+  ],
+  "bluetoothRemoteControl": [
+    {
+      "name": "DellKing PTT Mic"
+    }
+  ]
+}

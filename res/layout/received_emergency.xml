@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/emergency_list_horizontal_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/emergency_control_min_height" android:paddingStart="@dimen/emergency_list_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/emergency_list_vertical_padding" android:paddingBottom="@dimen/emergency_list_vertical_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.zello.ui.TextViewEx android:textStyle="bold" android:ellipsize="end" android:id="@id/nameText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/contact_text_horizontal_margin" android:drawablePadding="@dimen/contact_text_horizontal_margin" android:layout_marginEnd="@dimen/contact_text_horizontal_margin" style="?emergencyReceivedTextViewStyle" />
+        <com.zello.ui.TextViewEx android:ellipsize="end" android:id="@id/locationText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="@dimen/contact_text_horizontal_margin" style="?emergencyReceivedTextViewStyle" />
+    </LinearLayout>
+    <com.zello.ui.ImageButtonEx android:id="@id/locationPin" android:duplicateParentState="false" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" android:layout_marginLeft="@dimen/medium_padding" android:layout_marginStart="@dimen/medium_padding" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?emergencyReceivedButtonStyle" />
+</LinearLayout>

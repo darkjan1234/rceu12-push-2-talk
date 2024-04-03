@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.ViewPagerTabView android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:soundEffectsEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tab" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarButtonWidth" style="?tabStyle">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/tab_padding">
+            <com.zello.ui.TextViewUpperCase android:textAppearance="?tabButtonTextAppearance" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:paddingTop="@dimen/tab_padding" android:paddingBottom="@dimen/tab_padding" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:id="@id/flag" android:visibility="invisible" android:layout_width="@dimen/tab_flag_size" android:layout_height="@dimen/tab_flag_size" android:layout_marginStart="@dimen/tab_flag_margin" style="?tabFlagStyle" />
+    </LinearLayout>
+</com.zello.ui.ViewPagerTabView>

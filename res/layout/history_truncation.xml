@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/profile_margin_large" android:paddingTop="@dimen/large_padding" android:paddingRight="@dimen/profile_margin_large" android:paddingBottom="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/profile_margin_large" android:paddingEnd="@dimen/profile_margin_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/large_padding" android:paddingEnd="@dimen/large_padding" style="?secondaryTextStyle" />
+    <com.zello.ui.TransparentTextView android:gravity="center" android:id="@id/link" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+</LinearLayout>

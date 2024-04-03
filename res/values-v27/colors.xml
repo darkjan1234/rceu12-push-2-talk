@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigation_bar_light">@color/K100</color>
+    <color name="navigation_bar_divider_dark">@color/K0</color>
+    <color name="navigation_bar_divider_light">@color/_K87</color>
+</resources>

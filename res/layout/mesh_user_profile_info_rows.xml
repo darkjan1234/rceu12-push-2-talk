@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:paddingLeft="@dimen/profile_margin_medium" android:paddingTop="@dimen/profile_margin_xsmall" android:paddingRight="@dimen/profile_margin_medium" android:paddingBottom="@dimen/profile_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zello.ui.widget.LabeledModeControlledEditText android:id="@id/profileNetworkNameEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:inputType="textCapSentences" />
+    <com.zello.ui.widget.LabeledModeControlledEditText android:id="@id/profileUserNameEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:maxLength="40" android:inputType="textCapSentences" />
+    <com.zello.ui.widget.LabeledModeControlledEditText android:id="@id/profileDisplayNameEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:maxLength="40" android:inputType="textCapSentences" />
+    <com.zello.ui.widget.LabeledModeControlledEditText android:id="@id/profileJobNameEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:inputType="textCapSentences" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarButtonWidth" style="?meshProfileButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.ImageViewEx android:id="@id/menu_image" android:padding="@dimen/button_icon_padding" android:duplicateParentState="true" android:layout_width="@dimen/button_icon_outer_size" android:layout_height="@dimen/button_icon_outer_size" android:layout_marginStart="@dimen/button_margin" android:layout_marginEnd="@dimen/button_margin_large" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" />
+    <TextView android:ellipsize="end" android:gravity="start" android:id="@id/menu_text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/button_padding" android:maxLines="2" android:singleLine="false" android:layout_weight="1.0" style="?contactTextNormalStyle" />
+</LinearLayout>

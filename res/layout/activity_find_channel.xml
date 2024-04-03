@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.LinearLayoutEx android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?actionBarBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zello.ui.ClearButtonEditText android:ellipsize="end" android:id="@id/find_channel_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding" android:maxLines="1" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" />
+        <com.zello.ui.ImageButtonEx android:id="@id/find_channel_search" android:layout_width="?actionBarButtonWidth" android:layout_height="?actionBarButtonWidth" custom:imageViewExDisabledAlpha="?icPrimaryDisabledStateAlpha" style="?profileButtonStyle" />
+    </LinearLayout>
+    <com.zello.ui.ViewFlipper android:id="@id/find_channel_flipper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?viewStyle">
+            <com.zello.ui.LinearLayoutEx android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:linearLayoutExTopForegroundDrawable="?shadowTopImage" custom:linearLayoutExTopForegroundHeight="@dimen/panel_elevation">
+                <com.zello.ui.ListViewEx android:id="@id/find_channel_list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+                <com.zello.ui.LinearLayoutEx android:gravity="center" android:orientation="vertical" android:id="@id/find_channel_no_channels_found_layout" android:background="?screenBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="center" android:id="@id/find_channel_no_channels_found" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?normalTextStyle" />
+                    <TextView android:gravity="center" android:id="@id/find_channel_no_channels_found_description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                    <com.zello.ui.TransparentTextView android:gravity="center" android:id="@id/find_channel_no_channels_found_link" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                </com.zello.ui.LinearLayoutEx>
+            </com.zello.ui.LinearLayoutEx>
+        </LinearLayout>
+        <com.zello.ui.ListViewEx android:id="@id/find_channel_suggestions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:listViewExTopForegroundDrawable="?shadowTopImage" custom:listViewExTopForegroundHeight="@dimen/panel_elevation" style="@style/ListView" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zello.ui.ViewFlipper>
+</com.zello.ui.LinearLayoutEx>

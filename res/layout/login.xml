@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/login_accounts" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+    <com.zello.ui.LinearLayoutEx android:id="@id/login_buttons" style="@style/FloatingButtonParent">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/login_qr" style="?fabSmallGreyStyle" />
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/login_add" style="?fabLargeBlueStyle" />
+    </com.zello.ui.LinearLayoutEx>
+    <ImageView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowTopImage" />
+</FrameLayout>

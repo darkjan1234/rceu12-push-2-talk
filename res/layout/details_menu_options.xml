@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowBottomImage" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?viewStyle">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/volume" android:padding="@dimen/menu_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/volume_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                <TextView android:ellipsize="none" android:gravity="end" android:id="@id/volume_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/small_padding" style="?normalTextStyle" />
+            </LinearLayout>
+            <SeekBar android:id="@id/volume_seek" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_padding" />
+        </LinearLayout>
+        <com.zello.ui.SwitchEx android:id="@id/mute_untrusted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_padding" android:layout_marginTop="@dimen/menu_padding" android:layout_marginRight="@dimen/menu_padding" android:layout_marginBottom="@dimen/extra_large_padding" android:layout_marginHorizontal="@dimen/menu_padding" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/images_alerts" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/images" android:padding="@dimen/menu_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/images_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                <com.zello.ui.SpinnerEx android:id="@id/images_spin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?dialogSpinnerStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/texts" android:padding="@dimen/menu_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/texts_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                <com.zello.ui.SpinnerEx android:id="@id/texts_spin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?dialogSpinnerStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/alerts" android:padding="@dimen/menu_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/alerts_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                <com.zello.ui.SpinnerEx android:id="@id/alerts_spin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?dialogSpinnerStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

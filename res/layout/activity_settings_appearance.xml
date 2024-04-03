@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_settings_appearance_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:id="@id/appearance_scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/extra_large_padding" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/languageTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/languageSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spinner_padding_compensation_left" android:layout_marginRight="@dimen/spinner_padding_compensation_right" android:layout_marginBottom="@dimen/extra_large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+            <TextView android:id="@id/themeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/themeSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spinner_padding_compensation_left" android:layout_marginRight="@dimen/spinner_padding_compensation_right" android:layout_marginBottom="@dimen/extra_large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding">
+                <TextView android:id="@id/fontBoostTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/medium_padding" android:layout_weight="1.0" android:layout_marginEnd="@dimen/medium_padding" style="?secondaryTextStyle" />
+                <TextView android:id="@id/fontBoostGainLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?secondaryTextStyle" />
+            </LinearLayout>
+            <SeekBar android:id="@id/fontBoostSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" android:tickMark="?seekBarTickMark" />
+            <com.zello.ui.SwitchEx android:id="@id/fixedOrientationSwitch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

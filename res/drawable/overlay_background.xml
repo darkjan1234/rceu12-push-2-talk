@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:padding="@dimen/overlay_vertical_padding" android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ptt_button_face_dark" />
+    <corners android:radius="@dimen/overlay_corner_radius" />
+</shape>

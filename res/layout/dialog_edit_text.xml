@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/popup_dialog_horizontal_padding" android:paddingTop="@dimen/popup_dialog_vertical_padding" android:paddingRight="@dimen/popup_dialog_horizontal_padding" android:paddingBottom="@dimen/popup_dialog_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/popup_dialog_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid1" android:layout_marginTop="@dimen/grid3" android:layout_marginRight="@dimen/grid1" android:layout_marginStart="@dimen/grid1" android:layout_marginEnd="@dimen/grid1" app:errorEnabled="false" app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText android:paddingTop="@dimen/grid4" android:paddingBottom="@dimen/grid4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

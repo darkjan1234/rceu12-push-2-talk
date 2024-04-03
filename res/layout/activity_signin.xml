@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ViewFlipper android:id="@id/login_flipper" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:scrollViewExTopForegroundDrawable="?shadowTopImage" app:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/grid4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/login_username" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="false">
+                        <com.google.android.material.textfield.TextInputEditText android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="64" android:inputType="textNoSuggestions" android:imeOptions="actionNext" android:importantForAutofill="yes" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/login_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4" app:errorEnabled="false">
+                        <com.google.android.material.textfield.TextInputEditText android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="40" android:inputType="textPassword" android:imeOptions="actionDone" android:importantForAutofill="yes" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.zello.ui.SwitchEx android:id="@id/login_zello_work" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4" />
+                    <com.zello.ui.LinearLayoutEx android:layout_gravity="start" android:orientation="vertical" android:id="@id/login_forgot_password_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid2" app:linearLayoutExMaxWidth="@dimen/max_large_button_width">
+                        <Button android:textSize="@dimen/text3" android:layout_gravity="start" android:id="@id/login_forgot_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="false" style="?buttonSquareBorderlessBlueBoldStyle" />
+                    </com.zello.ui.LinearLayoutEx>
+                    <LinearLayout android:orientation="vertical" android:id="@id/login_zello_work_network" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                            <com.google.android.material.textfield.TextInputLayout android:id="@id/login_network" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:errorEnabled="false">
+                                <com.google.android.material.textfield.TextInputEditText android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="128" android:inputType="textNoSuggestions|textUri" android:imeOptions="actionDone" android:importantForAutofill="yes" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <TextView android:gravity="center_horizontal" android:id="@id/login_upsell_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid1" />
+                    </LinearLayout>
+                    <TextView android:id="@id/login_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4" style="@style/TextView.Toast" />
+                    <Button android:id="@id/login_signin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4" style="?buttonSquareSolidBlueBoldStyle" />
+                    <Button android:id="@id/login_continue_with_sso" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid4" style="?buttonSquareBorderlessBlueBoldStyle" />
+                    <Button android:id="@id/login_signin_with_other" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonSquareBorderlessBlueBoldStyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/login_network_configured" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/grid2">
+                    <TextView android:id="@id/login_network_configured_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+                    <TextView android:textColor="?listPrimaryColor" android:id="@id/login_network_configured_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/grid1" android:maxLines="3" />
+                </LinearLayout>
+                <Button android:layout_gravity="center_horizontal" android:id="@id/scan_qr_code_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconGravity="textStart" app:iconTint="?borderlessBlueButtonTextColor" style="?buttonSquareBorderlessBlueBoldStyle" />
+            </LinearLayout>
+        </com.zello.ui.ScrollViewEx>
+        <com.zello.ui.ListViewEx android:layout_width="fill_parent" android:layout_height="fill_parent" app:listViewExTopForegroundDrawable="?shadowTopImage" app:listViewExTopForegroundHeight="@dimen/panel_elevation" app:overscroll="true" style="@style/ListView" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/signInFragmentWebex" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/signInFragmentSso" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zello.ui.ViewFlipper>
+</LinearLayout>

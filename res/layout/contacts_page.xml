@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/contacts_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.zello.ui.ListViewEx android:id="@id/contacts_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:overscroll="true" style="@style/ListView" />
+        <com.zello.ui.EmptyStateComponent android:id="@id/contacts_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.zello.ui.FloatingActionButtonLayout android:layout_gravity="end|bottom|center" android:id="@id/fabParent" style="@style/FloatingButtonParent">
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/fab" style="?fabSmallBlueStyle" />
+        </com.zello.ui.FloatingActionButtonLayout>
+        <ImageView android:layout_gravity="top" android:id="@id/topShadow" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowTopImage" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/bottomShadow" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowBottomImage" />
+    </FrameLayout>
+</LinearLayout>

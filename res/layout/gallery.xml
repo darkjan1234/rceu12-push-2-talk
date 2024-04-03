@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.SlidingFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.GalleryImageView android:id="@id/info_icon" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/texting_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowBottomImage" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/admin" android:paddingBottom="@dimen/view_section_line_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?viewStyle">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:paddingTop="@dimen/list_divider_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_padding">
+                <Button android:id="@id/approve" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?buttonStyle" />
+                <View android:id="@id/separator" android:layout_width="@dimen/list_divider_height" android:layout_height="1.0dip" />
+                <Button android:id="@id/decline" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?buttonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/contact_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?viewStyle" />
+    </LinearLayout>
+</com.zello.ui.SlidingFrameLayout>

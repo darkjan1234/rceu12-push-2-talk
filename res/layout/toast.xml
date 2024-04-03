@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.LinearLayoutEx android:orientation="horizontal" android:paddingLeft="@dimen/toast_margin_left_right" android:paddingRight="@dimen/toast_margin_left_right" android:paddingBottom="@dimen/toast_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?toastBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.zello.ui.ImageViewEx android:id="@id/icon" android:paddingTop="@dimen/button_icon_padding" android:paddingBottom="@dimen/button_icon_padding" android:layout_width="@dimen/button_icon_outer_size" android:layout_height="@dimen/button_icon_outer_size" android:layout_marginRight="@dimen/toast_padding_left_right" android:scaleType="centerInside" android:paddingStart="@dimen/button_icon_padding" android:layout_marginEnd="@dimen/toast_padding_left_right" />
+        <com.zello.ui.EmojiTextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/button_icon_outer_size" android:paddingStart="@dimen/button_icon_padding" android:paddingEnd="@dimen/button_icon_padding" style="@style/TextView.Popup" />
+    </LinearLayout>
+</com.zello.ui.LinearLayoutEx>

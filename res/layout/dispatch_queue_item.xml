@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/dispatch_queue_horizontal_padding" android:paddingTop="@dimen/dispatch_queue_vertical_padding" android:paddingRight="@dimen/dispatch_queue_horizontal_padding" android:paddingBottom="@dimen/dispatch_queue_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dispatch_queue_horizontal_padding" android:paddingVertical="@dimen/dispatch_queue_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.ProfileImageView android:id="@id/call_queue_profile" android:layout_width="@dimen/dispatch_queue_profile_image_size" android:layout_height="@dimen/dispatch_queue_profile_image_size" android:layout_marginEnd="@dimen/grid1" custom:retainCaches="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/grid1">
+        <TextView android:ellipsize="end" android:id="@id/call_queue_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?contactTextNameStyle" />
+        <TextView android:ellipsize="end" android:id="@id/call_queue_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_text_vertical_margin" style="?contactTextSecondaryStyle" />
+    </LinearLayout>
+    <com.zello.ui.LevelMeterView android:id="@id/call_queue_level" android:visibility="invisible" android:layout_width="@dimen/grid8" android:layout_height="@dimen/grid4" android:layout_marginEnd="@dimen/grid2" />
+    <Button android:id="@id/call_queue_accept_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?buttonRoundOutlineBlue" />
+</LinearLayout>

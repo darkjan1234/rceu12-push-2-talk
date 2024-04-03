@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_wear_capabilities">
+        <item>ptt</item>
+    </string-array>
+    <array name="profile_icon_background_dark">
+        <item>@color/profile_icon_background_1_dark</item>
+        <item>@color/profile_icon_background_2_dark</item>
+        <item>@color/profile_icon_background_3_dark</item>
+        <item>@color/profile_icon_background_4_dark</item>
+        <item>@color/profile_icon_background_5_dark</item>
+        <item>@color/profile_icon_background_6_dark</item>
+        <item>@color/profile_icon_background_7_dark</item>
+    </array>
+    <array name="profile_icon_background_light">
+        <item>@color/profile_icon_background_1_light</item>
+        <item>@color/profile_icon_background_2_light</item>
+        <item>@color/profile_icon_background_3_light</item>
+        <item>@color/profile_icon_background_4_light</item>
+        <item>@color/profile_icon_background_5_light</item>
+        <item>@color/profile_icon_background_6_light</item>
+        <item>@color/profile_icon_background_7_light</item>
+    </array>
+    <array name="profile_icon_foreground_dark">
+        <item>@color/profile_icon_foreground_1_dark</item>
+        <item>@color/profile_icon_foreground_2_dark</item>
+        <item>@color/profile_icon_foreground_3_dark</item>
+        <item>@color/profile_icon_foreground_4_dark</item>
+        <item>@color/profile_icon_foreground_5_dark</item>
+        <item>@color/profile_icon_foreground_6_dark</item>
+        <item>@color/profile_icon_foreground_7_dark</item>
+    </array>
+    <array name="profile_icon_foreground_light">
+        <item>@color/profile_icon_foreground_1_light</item>
+        <item>@color/profile_icon_foreground_2_light</item>
+        <item>@color/profile_icon_foreground_3_light</item>
+        <item>@color/profile_icon_foreground_4_light</item>
+        <item>@color/profile_icon_foreground_5_light</item>
+        <item>@color/profile_icon_foreground_6_light</item>
+        <item>@color/profile_icon_foreground_7_light</item>
+    </array>
+</resources>

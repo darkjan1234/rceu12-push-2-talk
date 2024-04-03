@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_settings_history_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" custom:scrollViewExTopForegroundDrawable="?shadowTopImage" custom:scrollViewExTopForegroundHeight="@dimen/panel_elevation">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/extra_large_padding" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/details_empty_text_padding" android:layout_marginRight="@dimen/details_empty_text_padding" android:layout_marginBottom="@dimen/extra_large_padding">
+                <TextView android:gravity="center" android:id="@id/errorTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?normalTextStyle" />
+                <TextView android:gravity="center" android:id="@id/errorDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+                <TextView android:gravity="center" android:id="@id/errorLink" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?secondaryTextStyle" />
+            </LinearLayout>
+            <TextView android:id="@id/retentionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/retention" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+            <TextView android:id="@id/retentionInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" android:drawablePadding="@dimen/large_padding" style="@style/TextView.Toast" />
+            <TextView android:id="@id/voiceSizeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/voiceSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/extra_large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+            <TextView android:id="@id/imageSizeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/large_padding" style="?secondaryTextStyle" />
+            <com.zello.ui.SpinnerEx android:id="@id/imageSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/extra_large_padding" android:layout_marginStart="@dimen/spinner_padding_compensation_left" android:layout_marginEnd="@dimen/spinner_padding_compensation_right" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/button_min_size" custom:iconGravity="textStart" custom:iconTint="?borderlessBlueButtonTextColor" style="?buttonRoundOutlineBlue" />
+        </LinearLayout>
+    </com.zello.ui.ScrollViewEx>
+</LinearLayout>

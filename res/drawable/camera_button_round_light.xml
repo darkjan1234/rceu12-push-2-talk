@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/button_round_pressed_light"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:left="@dimen/camera_button_padding" android:top="@dimen/camera_button_padding" android:right="@dimen/camera_button_padding" android:bottom="@dimen/camera_button_padding">
+        <shape android:shape="oval">
+            <solid android:color="#ff000000" />
+        </shape>
+    </item>
+    <item android:left="@dimen/camera_button_padding" android:top="@dimen/camera_button_padding" android:right="@dimen/camera_button_padding" android:bottom="@dimen/camera_button_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/button_round_light" />
+        </shape>
+    </item>
+</ripple>

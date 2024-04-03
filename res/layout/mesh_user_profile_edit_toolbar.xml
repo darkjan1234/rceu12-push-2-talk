@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.FloatingActionButtonLayout android:gravity="end" android:id="@id/toolbarButtons" android:layout_width="fill_parent" style="@style/FloatingButtonParent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/buttonProfileChangePicture" style="?fabSmallGreyStyle" />
+</com.zello.ui.FloatingActionButtonLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/topGroup" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/NotificationTitle" android:ellipsize="end" android:id="@id/notificationTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        <TextView android:textAppearance="@style/NotificationDescription" android:ellipsize="end" android:id="@id/notificationDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/iconGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/statusButton" android:focusable="true" android:clickable="true" android:layout_width="@dimen/notification_progress_size" android:layout_height="@dimen/notification_progress_size" android:minWidth="0.0dip" android:minHeight="0.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/statusArrow" android:layout_width="@dimen/notification_status_arrow_size" android:layout_height="@dimen/notification_status_arrow_size" android:layout_margin="@dimen/notification_status_arrow_margin" android:scaleType="centerInside" android:tint="@color/notification_icon" />
+        <ImageView android:layout_gravity="center" android:id="@id/statusImage" android:layout_width="@dimen/notification_progress_size" android:layout_height="@dimen/notification_progress_size" android:scaleType="fitXY" android:adjustViewBounds="false" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/statusWheels" android:layout_width="@dimen/notification_progress_size" android:layout_height="@dimen/notification_progress_size" android:scaleType="centerInside" android:indeterminateOnly="true" />
+    </FrameLayout>
+</LinearLayout>

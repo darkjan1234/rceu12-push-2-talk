@@ -1,0 +1,46 @@
+{
+	"header": {
+		"title": "Upgrade to ZelloWork",
+		"subtitle": "Private Communication for Busy Teams"
+	},
+	"content": [
+		{
+			"image": "consumer_upsell__icon_1.svg",
+			"title": "Protect Channels",
+			"subtitle": "Channels are only viewed by ZelloWork members."
+		},
+		{
+			"image": "consumer_upsell__icon_2.svg",
+			"title": "Count on 99.99% Uptime",
+			"subtitle": "Dedicated enterprise servers ensure service availability."
+		},
+		{
+			"image": "consumer_upsell__icon_3.svg",
+			"title": "Create Users Easily",
+			"subtitle": "Import over 1000 users in under a minute from the admin console."
+		},
+		{
+			"image": "consumer_upsell__icon_4.svg",
+			"title": "Encrypt Conversations",
+			"subtitle": "All your messages are encrypted from end-to-end."
+		},
+		{
+			"image": "consumer_upsell__icon_5.svg",
+			"title": "Record All Messages",
+			"subtitle": "Keep all conversations in one place for up to two years."
+		},
+		{
+			"image": "consumer_upsell__icon_6.svg",
+			"title": "Enjoy 24/7 Support",
+			"subtitle": "Our support team is ready to answer your questions at any time."
+		}
+	],
+	"extras": {
+		"upsellTitle": "What is ZelloWork?",
+		"upsellSubtitle": "Learn more about ZelloWork",
+		"zelloWorkDescription": "ZelloWork is a private push-to-talk network\nfor your company or group.\n%link%",
+		"buttonText": "Try ZelloWork for Free",
+		"buttonUrl": "https://zellowork.com",
+		"keyword": "default"
+	}
+}

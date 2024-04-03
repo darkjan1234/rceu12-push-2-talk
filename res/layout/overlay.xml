@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zello.ui.overlay.OverlayButton android:gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/overlay_minimum_width" android:minHeight="@dimen/overlay_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/overlay_horizontal_padding">
+        <ImageView android:id="@id/icon_back" android:background="@drawable/overlay_background" android:visibility="invisible" android:layout_width="@dimen/contact_status_icon_size_overlay" android:layout_height="@dimen/contact_status_icon_size_overlay" />
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/contact_status_icon_size_overlay" android:layout_height="@dimen/contact_status_icon_size_overlay" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/overlay_text_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/overlay_vertical_padding" android:layout_marginBottom="@dimen/overlay_vertical_padding" android:maxLines="1" android:singleLine="true" android:drawablePadding="@dimen/contact_status_icon_size_overlay_padding" android:layout_weight="1.0" android:layout_marginStart="@dimen/small_padding" android:layout_marginEnd="0.0dip" />
+    <com.zello.ui.ImageButtonEx android:id="@id/button" android:layout_width="@dimen/overlay_height" android:layout_height="@dimen/overlay_height" app:iconTint="@color/text_primary_enabled_dark" style="@style/ProfileButton.Black" />
+</com.zello.ui.overlay.OverlayButton>

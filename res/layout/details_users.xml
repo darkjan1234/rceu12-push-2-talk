@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?screenBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.ViewFlipper android:id="@id/details_users_search_flipper" android:background="?talkPanelColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="end|center" android:id="@id/details_users_search_icon" android:layout_width="?actionBarButtonWidth" android:layout_height="@dimen/contact_button_size_portrait_large" style="?squareButtonStyle" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_padding" android:layout_marginRight="@dimen/small_padding" android:layout_marginStart="@dimen/small_padding" android:layout_marginEnd="@dimen/small_padding">
+            <com.zello.ui.ClearButtonEditText android:ellipsize="end" android:id="@id/details_users_search" android:layout_width="fill_parent" android:layout_height="@dimen/contact_button_size_portrait_large" android:maxLines="1" android:inputType="textNoSuggestions" android:imeOptions="actionDone" android:paddingEnd="@dimen/small_padding" />
+        </FrameLayout>
+    </com.zello.ui.ViewFlipper>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zello.ui.ListViewEx android:id="@id/details_users_list" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:overscroll="true" style="@style/ListView" />
+        <TextView android:gravity="center" android:id="@id/details_users_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="@dimen/panel_elevation" android:src="?shadowTopImage" />
+    </FrameLayout>
+</LinearLayout>

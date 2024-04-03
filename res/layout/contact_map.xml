@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/popover_elevation" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.zello.ui.RoundedFrameLayout android:layout_gravity="center_horizontal" android:id="@id/markerRoundedFrameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" custom:constrainedFrameLayoutSquare="false" custom:roundedFrameLayoutBorderWidth="@dimen/popover_annotation_shadow_width" custom:roundedFrameLayoutCaretGravity="bottom" custom:roundedFrameLayoutCaretStyle="round" custom:roundedFrameLayoutCornerRadius="@dimen/button_corner_radius" custom:roundedFrameLayoutShadow="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/markerRoundedLinearLayout" android:background="@color/popover_annotation_color" android:padding="@dimen/popover_annotation_shadow_width" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/contact_small_portrait" />
+        </LinearLayout>
+    </com.zello.ui.RoundedFrameLayout>
+</LinearLayout>

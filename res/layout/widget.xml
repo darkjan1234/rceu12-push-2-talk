@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_root" android:background="@drawable/widget_normal_bk" android:padding="@dimen/widget_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center" android:id="@id/profile_wrapper" android:background="@drawable/borderless_square_button_dark" android:padding="@dimen/widget_icon_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/profile1" android:layout_width="@dimen/widget_icon_size" android:layout_height="@dimen/widget_icon_size" android:scaleType="centerInside" />
+            <ImageView android:id="@id/profile2" android:layout_width="@dimen/widget_icon_size" android:layout_height="@dimen/widget_icon_size" android:scaleType="centerInside" />
+            <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/button_icon_outer_size" android:layout_height="@dimen/button_icon_outer_size" android:scaleType="centerInside" android:indeterminateOnly="true" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/talk_group" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/normal_text_size" android:textStyle="bold" android:textColor="@color/widget_normal_text" android:ellipsize="none" android:id="@id/name" android:paddingRight="@dimen/small_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+                <TextView android:textSize="@dimen/normal_text_size" android:textColor="@color/widget_secondary_text" android:ellipsize="end" android:id="@id/status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/contact_text_vertical_margin" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+            </LinearLayout>
+            <ImageButton android:id="@id/send_picture" android:background="@drawable/borderless_square_button_dark" android:duplicateParentState="false" android:layout_width="@dimen/actionbar_button_width" android:layout_height="@dimen/actionbar_button_width" />
+            <ImageButton android:id="@id/open_zello" android:background="@drawable/borderless_square_button_dark" android:duplicateParentState="false" android:layout_width="@dimen/actionbar_button_width" android:layout_height="@dimen/actionbar_button_width" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

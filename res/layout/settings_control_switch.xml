@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zello.ui.SwitchEx android:id="@id/switch_control" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/grid4" android:layout_marginTop="@dimen/extra_large_padding" android:layout_marginRight="@dimen/grid4" android:layout_marginBottom="@dimen/extra_large_padding" />
+    <View android:id="@id/divider" android:background="?listViewDividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/view_divider_height" />
+</LinearLayout>

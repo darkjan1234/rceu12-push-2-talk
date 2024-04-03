@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/appbar" />
+    <com.zello.ui.FrameLayoutEx android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:frameLayoutExTopForegroundDrawable="?shadowTopImage" custom:frameLayoutExTopForegroundHeight="@dimen/panel_elevation">
+        <TextView android:gravity="center" android:id="@id/status" android:padding="@dimen/large_padding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="?normalTextStyle" />
+        <com.zello.ui.ScrollViewEx android:id="@id/scroll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/extra_large_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.zello.ui.ProfileImageView android:layout_gravity="center_horizontal" android:id="@id/graph" android:background="?screenBackgroundColor" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" custom:profileImageViewCircular="false" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/rep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding" layout="@layout/section" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rep_all_time_channel" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rep_six_months_channel" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rep_all_time_global" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rep_six_months_global" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <include android:id="@id/rank" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding" layout="@layout/section" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_all_time_channel" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_six_months_channel" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_all_time_global" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rank_six_months_global" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/large_padding">
+                        <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="?secondaryTextStyle" />
+                        <TextView android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?profileTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.zello.ui.ScrollViewEx>
+    </com.zello.ui.FrameLayoutEx>
+</LinearLayout>
